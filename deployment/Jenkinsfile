@@ -45,6 +45,7 @@ podTemplate(
                     sh """
                         ${sonarScannerHome}/bin/sonar-scanner \
                         -Dsonar.projectKey=lifesub-web-dg0317 \
+                        -Dsonar.projectName=lifesub-web-dg0317 \
                         -Dsonar.sources=src \
                         -Dsonar.tests=src \
                         -Dsonar.test.inclusions=src/**/*.test.js,src/**/*.test.jsx \
