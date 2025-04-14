@@ -77,7 +77,7 @@ podTemplate(
         stage('Build & Push Image') {
             container('podman') {
                 withCredentials([usernamePassword(
-                    credentialsId: 'acr-credentials',
+                    credentialsId: 'acr_credentials',
                     usernameVariable: 'USERNAME',
                     passwordVariable: 'PASSWORD'
                 )]) {
