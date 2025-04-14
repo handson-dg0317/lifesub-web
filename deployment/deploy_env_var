@@ -2,6 +2,7 @@
 teamid=dg0317
 root_project=lifesub-web
 namespace=dg0317-lifesub-ns
+service_name=lifesub-web
 
 # Container Registry Settings
 registry=acrdigitalgarage03.azurecr.io
@@ -10,6 +11,7 @@ image_org=dg0317
 # Application Settings
 replicas=1
 export_port=18080
+ingress_host=20.249.186.119
 
 # Resource Settings
 resources_requests_cpu=256m
